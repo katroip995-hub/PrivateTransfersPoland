@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Private Transfers Poland - Luxury SUV private transport services across Poland with multilingual and experienced drivers.">
+    <title>Private Transfers Poland</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #001f3f, #003366);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header img {
+            width: 140px;
+            display: block;
+            margin: 0 auto 15px;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.4));
+        }
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            margin: 0;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+            color: #e1ecf5;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            background-color: #002244;
+            padding: 0.75rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        section {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #003366;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+        }
+        footer {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        .contact-info {
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        select {
+            padding: 0.4rem;
+            border-radius: 6px;
+            border: none;
+        }
+    </style>
+    <script>
+        const translations = {
+            en: { title: "Private Transfers Poland - Luxury SUV Service", intro: "We offer luxury SUV private transport services across Poland with the option to hire a driver for several days. Our driver speaks Polish, English, French, and Arabic, and has extensive experience in transporting passengers safely and comfortably.", highlights: "Why Choose Us:", contactTitle: "Contact" },
+            pl: { title: "Prywatne Przewozy Polska - Luksusowy SUV", intro: "Oferujemy luksusowe przewozy SUV-ami po Polsce z możliwością wynajęcia kierowcy na kilka dni. Nasz kierowca mówi po polsku, angielsku, francusku i arabsku oraz posiada duże doświadczenie w bezpiecznym i komfortowym przewożeniu pasażerów.", highlights: "Dlaczego warto nas wybrać:", contactTitle: "Kontakt" },
+            fr: { title: "Transferts Privés Pologne - SUV de Luxe", intro: "Nous offrons des services de transport privé en SUV de luxe à travers la Pologne avec la possibilité de louer un chauffeur pour plusieurs jours. Notre chauffeur parle polonais, anglais, français et arabe, et possède une grande expérience dans le transport sûr et confortable des passagers.", highlights: "Pourquoi nous choisir:", contactTitle: "Contact" },
+            ar: { title: "النقل الخاص في بولندا - SUV فاخر", intro: "نقدم خدمات النقل الخاص بسيارات SUV الفاخرة في جميع أنحاء بولندا مع إمكانية استئجار سائق لعدة أيام. سائقنا يتحدث البولندية والإنجليزية والفرنسية والعربية ولديه خبرة واسعة في نقل الركاب بأمان وراحة.", highlights: "لماذا تختارنا:", contactTitle: "اتصال" }
+        };
+        function changeLanguage(lang) {
+            document.getElementById('title').innerText = translations[lang].title;
+            document.getElementById('intro').innerText = translations[lang].intro;
+            document.getElementById('highlightsTitle').innerText = translations[lang].highlights;
+            document.getElementById('contactTitle').innerText = translations[lang].contactTitle;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/7433/7433990.png" alt="Car on Poland Map Logo">
+        <h1 id="title">Private Transfers Poland - Luxury SUV Service</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <select onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="pl">Polski</option>
+            <option value="fr">Français</option>
+            <option value="ar">العربية</option>
+        </select>
+    </nav>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p id="intro">We offer luxury SUV private transport services across Poland with the option to hire a driver for several days. Our driver speaks Polish, English, French, and Arabic, and has extensive experience in transporting passengers safely and comfortably.</p>
+        <h3 id="highlightsTitle">Why Choose Us:</h3>
+        <ul>
+            <li>✅ Multilingual driver: Polish, English, French, Arabic</li>
+            <li>✅ Professional driving experience</li>
+            <li>✅ Luxury SUV vehicles with premium comfort</li>
+            <li>✅ Flexible booking for single trips or multiple days</li>
+            <li>✅ Punctual, reliable, and discreet service</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2 id="contactTitle">Contact</h2>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> +48 667 520 034, +48 667 520 037</p>
+            <p><strong>Email:</strong> <a href="mailto:privatetransferspoland@gmail.com">privatetransferspoland@gmail.com</a></p>
+            <p><strong>WhatsApp:</strong> +48 667 520 037</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Private Transfers Poland. All rights reserved.
+    </footer>
+</body>
+</html>
